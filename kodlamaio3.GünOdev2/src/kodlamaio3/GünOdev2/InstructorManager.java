@@ -9,6 +9,7 @@ public class InstructorManager {
 	public void add(Instructor instructor) {
 		System.out.println("Instructor eklendi: "+ instructor.getFirstName() + " " + instructor.getLastName()
 				+ ", Salary : " + instructor.getSalary());
+		instructors.add(instructor);
 	}
 	
 	public void delete(Instructor instructor) {

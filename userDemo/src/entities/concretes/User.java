@@ -1,24 +1,27 @@
 package entities.concretes;
 
 
-import entities.abstracts.Notification;
+import javax.management.Notification;
 
 public class User {
     private int id;
     private String firstName;
     private String lastName;
     private String password;
-    private Notification notification;
+
+    private String email;
+    //private Notification notification;
 
 
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, String password) {
+    public User(int id, String firstName, String lastName, String password, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
+        this.email = email;
     }
 
     public int getId() {
@@ -53,11 +56,12 @@ public class User {
         this.password = password;
     }
 
-    public Notification getNotification() {
-        return notification;
+    public String getEmail() {
+        return email;
     }
 
-    public void setNotification(Notification notification) {
-        this.notification = notification;
+    public void setEmail(String email) {
+        this.email = email;
     }
+
 }
